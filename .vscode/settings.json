@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 5501
-}
+    "globals": {
+      "L": true,
+      "moment": true,
+      "d3": true
+    }
+  }
+
+
+
