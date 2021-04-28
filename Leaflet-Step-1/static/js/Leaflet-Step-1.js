@@ -1,5 +1,5 @@
 
-var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
+var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson" ;
 
 //function to build map
 function mapDisplay (){
@@ -30,7 +30,8 @@ function mapDisplay (){
     d3.json(url, function(data){
         L.geoJSON(data, {
             pointToLayer:function (feature, latlng){
-                return L.circleMarker(latlng, markerStyle(feature));
+                return L.circleMarker(latlng);
+                //return L.circleMarker(latlng, markerStyle(feature));
             },
         // Binding a pop-up to each feature
         onEachFeature: function(feature, layer){
