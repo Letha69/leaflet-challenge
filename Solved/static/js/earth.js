@@ -1,7 +1,7 @@
 // Load in geojson data
 var geoData = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
-// build map
+// function to build the map
 
 function earthquake(){
     // Creating map object
