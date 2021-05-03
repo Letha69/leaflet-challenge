@@ -42,14 +42,14 @@ function mapLegend(map){
  
     legend.onAdd = function() {
         var div = L.DomUtil.create("div", "info legend");
-        magnitudeLevels = [0,1,2,3,4,5];
+        categories = [0,1,2,3,4,5];
     
         div.innerHTML += "<h3>Magnitude</h3>"
 
-    for (var i = 0; i < magnitudeLevels.length; i++) {
+    for (var i = 0; i < categories.length; i++) {
         div.innerHTML +=
-            '<i style="background: ' + chooseColor(magnitudeLevels[i] + 1) + '"></i> ' +
-            magnitudeLevels[i] + (magnitudeLevels[i + 1] ? '&ndash;' + magnitudeLevels[i + 1] + '<br>' : '+');
+            '<i style="background: ' + chooseColor(categories[i] + 1) + '"></i> ' +
+            categories[i] + (categories[i + 1] ? '&ndash;' + categories[i + 1] + '<br>' : '+');
         
     }
     return div;
